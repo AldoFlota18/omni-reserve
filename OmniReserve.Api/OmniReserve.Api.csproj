@@ -11,4 +11,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="10.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\OmniReserve.Application\OmniReserve.Application.csproj" />
+    <ProjectReference Include="..\OmniReserve.Infrastructure\OmniReserve.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
