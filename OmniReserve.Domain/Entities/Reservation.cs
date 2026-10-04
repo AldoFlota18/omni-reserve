@@ -18,7 +18,7 @@ public class Reservation
     {
         if (checkInDate >= checkOutDate)
         {
-            throw new InvalidReservationDatesException;
+            throw new InvalidReservationDatesException();
         }
 
         Id = Guid.NewGuid();

@@ -130,6 +130,16 @@
             "related": ".xml"
           }
         }
+      },
+      "OmniReserve.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/OmniReserve.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OmniReserve.Domain.dll": {}
+        }
       }
     }
   },
@@ -370,12 +380,18 @@
         "microsoft.identitymodel.tokens.8.14.0.nupkg.sha512",
         "microsoft.identitymodel.tokens.nuspec"
       ]
+    },
+    "OmniReserve.Domain/1.0.0": {
+      "type": "project",
+      "path": "../OmniReserve.Domain/OmniReserve.Domain.csproj",
+      "msbuildProject": "../OmniReserve.Domain/OmniReserve.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
       "MediatR >= 14.2.0",
-      "Microsoft.Extensions.DependencyInjection.Abstractions >= 10.0.12"
+      "Microsoft.Extensions.DependencyInjection.Abstractions >= 10.0.12",
+      "OmniReserve.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -410,7 +426,11 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\aldol\\Documents\\AplicacionesBasesDatos\\omni-reserve\\OmniReserve.Domain\\OmniReserve.Domain.csproj": {
+              "projectPath": "C:\\Users\\aldol\\Documents\\AplicacionesBasesDatos\\omni-reserve\\OmniReserve.Domain\\OmniReserve.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

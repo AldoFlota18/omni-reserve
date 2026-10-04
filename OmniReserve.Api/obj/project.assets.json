@@ -209,13 +209,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
-          "MediatR": "14.2.0"
+          "MediatR": "14.2.0",
+          "OmniReserve.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/OmniReserve.Application.dll": {}
         },
         "runtime": {
           "bin/placeholder/OmniReserve.Application.dll": {}
+        }
+      },
+      "OmniReserve.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/OmniReserve.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OmniReserve.Domain.dll": {}
         }
       },
       "OmniReserve.Infrastructure/1.0.0": {
@@ -742,6 +753,11 @@
       "type": "project",
       "path": "../OmniReserve.Application/OmniReserve.Application.csproj",
       "msbuildProject": "../OmniReserve.Application/OmniReserve.Application.csproj"
+    },
+    "OmniReserve.Domain/1.0.0": {
+      "type": "project",
+      "path": "../OmniReserve.Domain/OmniReserve.Domain.csproj",
+      "msbuildProject": "../OmniReserve.Domain/OmniReserve.Domain.csproj"
     },
     "OmniReserve.Infrastructure/1.0.0": {
       "type": "project",

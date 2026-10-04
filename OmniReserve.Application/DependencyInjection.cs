@@ -1,5 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using MediatR;
+using System.Reflection;
 
 namespace OmniReserve.Application;
 
