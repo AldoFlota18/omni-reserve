@@ -1,0 +1,13 @@
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Infrastructure\obj\Debug\net10.0\OmniReserve.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Infrastructure\obj\Debug\net10.0\OmniReserve.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Infrastructure\obj\Debug\net10.0\OmniReserve.Infrastructure.AssemblyInfo.cs
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Infrastructure\obj\Debug\net10.0\OmniReserve.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Infrastructure\obj\Debug\net10.0\OmniReserve.Infrastructure.sourcelink.json
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Infrastructure\bin\Debug\net10.0\OmniReserve.Infrastructure.deps.json
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Infrastructure\bin\Debug\net10.0\OmniReserve.Infrastructure.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Infrastructure\bin\Debug\net10.0\OmniReserve.Infrastructure.pdb
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Infrastructure\obj\Debug\net10.0\OmniReserve.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Infrastructure\obj\Debug\net10.0\OmniReserve.Infrastructure.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Infrastructure\obj\Debug\net10.0\refint\OmniReserve.Infrastructure.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Infrastructure\obj\Debug\net10.0\OmniReserve.Infrastructure.pdb
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Infrastructure\obj\Debug\net10.0\ref\OmniReserve.Infrastructure.dll

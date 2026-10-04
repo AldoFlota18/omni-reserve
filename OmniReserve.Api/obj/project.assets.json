@@ -113,6 +113,26 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "OmniReserve.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/OmniReserve.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OmniReserve.Application.dll": {}
+        }
+      },
+      "OmniReserve.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/OmniReserve.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OmniReserve.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -489,11 +509,23 @@
         "swashbuckle.aspnetcore.swaggerui.10.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "OmniReserve.Application/1.0.0": {
+      "type": "project",
+      "path": "../OmniReserve.Application/OmniReserve.Application.csproj",
+      "msbuildProject": "../OmniReserve.Application/OmniReserve.Application.csproj"
+    },
+    "OmniReserve.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../OmniReserve.Infrastructure/OmniReserve.Infrastructure.csproj",
+      "msbuildProject": "../OmniReserve.Infrastructure/OmniReserve.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
       "Microsoft.AspNetCore.OpenApi >= 10.0.6",
+      "OmniReserve.Application >= 1.0.0",
+      "OmniReserve.Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 10.2.3"
     ]
   },
@@ -529,7 +561,14 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\aldol\\Documents\\AplicacionesBasesDatos\\omni-reserve\\OmniReserve.Application\\OmniReserve.Application.csproj": {
+              "projectPath": "C:\\Users\\aldol\\Documents\\AplicacionesBasesDatos\\omni-reserve\\OmniReserve.Application\\OmniReserve.Application.csproj"
+            },
+            "C:\\Users\\aldol\\Documents\\AplicacionesBasesDatos\\omni-reserve\\OmniReserve.Infrastructure\\OmniReserve.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\aldol\\Documents\\AplicacionesBasesDatos\\omni-reserve\\OmniReserve.Infrastructure\\OmniReserve.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

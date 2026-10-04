@@ -1,0 +1,13 @@
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Application\obj\Debug\net10.0\OmniReserve.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Application\obj\Debug\net10.0\OmniReserve.Application.AssemblyInfoInputs.cache
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Application\obj\Debug\net10.0\OmniReserve.Application.AssemblyInfo.cs
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Application\obj\Debug\net10.0\OmniReserve.Application.csproj.CoreCompileInputs.cache
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Application\obj\Debug\net10.0\OmniReserve.Application.sourcelink.json
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Application\bin\Debug\net10.0\OmniReserve.Application.deps.json
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Application\bin\Debug\net10.0\OmniReserve.Application.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Application\bin\Debug\net10.0\OmniReserve.Application.pdb
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Application\obj\Debug\net10.0\OmniReserve.Application.csproj.AssemblyReference.cache
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Application\obj\Debug\net10.0\OmniReserve.Application.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Application\obj\Debug\net10.0\refint\OmniReserve.Application.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Application\obj\Debug\net10.0\OmniReserve.Application.pdb
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Application\obj\Debug\net10.0\ref\OmniReserve.Application.dll

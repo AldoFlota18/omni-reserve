@@ -35,3 +35,7 @@ C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\obj
 C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\obj\Debug\net10.0\OmniReserve.Api.pdb
 C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\obj\Debug\net10.0\OmniReserve.Api.genruntimeconfig.cache
 C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\obj\Debug\net10.0\ref\OmniReserve.Api.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\OmniReserve.Application.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\OmniReserve.Infrastructure.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\OmniReserve.Application.pdb
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\OmniReserve.Infrastructure.pdb
