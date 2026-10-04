@@ -1,0 +1,12 @@
+using System;
+using MediatR;
+using OmniReserve.Domain.Enums;
+
+namespace OmniReserve.Application.Rooms.Commands.CreateRoom;
+
+public class CreateRoomCommand : IRequest<Guid>
+{
+    public required string RoomNumber { get; set; }
+    public RoomType Type { get; set; }
+    public decimal PricePerNight { get; set; }
+}

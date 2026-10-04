@@ -39,3 +39,11 @@ C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin
 C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\OmniReserve.Infrastructure.dll
 C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\OmniReserve.Application.pdb
 C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\OmniReserve.Infrastructure.pdb
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\MediatR.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\MediatR.Contracts.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\OmniReserve.Domain.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\OmniReserve.Domain.pdb
