@@ -5,8 +5,9 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-app.MapControllers();
-app.Run();
-
 app.UseSwagger();
 app.UseSwaggerUI();
+
+app.MapControllers();
+
+app.Run();
