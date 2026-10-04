@@ -20,12 +20,12 @@ public class Room
         IsAvailable = true;
     }
 
-    public MarkAsUnavailable()
+    public void MarkAsUnavailable()
     {
         IsAvailable = false;
     }
 
-    public MarkAsAvailable()
+    public void MarkAsAvailable()
     {
         IsAvailable = true;
     }

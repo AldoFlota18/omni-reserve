@@ -26,6 +26,6 @@ public class Reservation
         CheckInDate = checkInDate;
         CheckOutDate = checkOutDate;
         TotalPrice = totalPrice;
-        Status = "Pending";
+        Status = ReservationStatus.Pending;
     }
 }

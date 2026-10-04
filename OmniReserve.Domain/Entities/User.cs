@@ -14,8 +14,8 @@ public class User
 
     public User(string firstName, string lastName, string email, string passwordHash, Role role)
     {
-        if (string.IsNullOrWhiteSpace(firstName)) throw ArgumentNullException(nameof(firstName));
-        if (string.IsNullOrWhiteSpace(lastName)) throw ArgumentNullException(nameof(lastName));
+        if (string.IsNullOrWhiteSpace(firstName)) throw new ArgumentNullException(nameof(firstName));
+        if (string.IsNullOrWhiteSpace(lastName)) throw new ArgumentNullException(nameof(lastName));
 
         Id = Guid.NewGuid();
         FirstName = firstName;
