@@ -7,7 +7,7 @@ namespace OmniReserve.Application.Rooms.Queries.GetRoomById;
 
 public class GetRoomByIdQueryHandler : IRequestHandler<GetRoomByIdQuery, RoomResponseDto>
 {
-    public Task<RoomResponseDto> Handle(GetRoomByIdQuery request)
+    public Task<RoomResponseDto> Handle(GetRoomByIdQuery request, CancellationToken cancellationToken)
     {
         var response = new RoomResponseDto
         {
@@ -18,6 +18,6 @@ public class GetRoomByIdQueryHandler : IRequestHandler<GetRoomByIdQuery, RoomRes
             IsAvailable = true
         };
 
-        return response;
+        return Task.FromResult(response);
     }
 }

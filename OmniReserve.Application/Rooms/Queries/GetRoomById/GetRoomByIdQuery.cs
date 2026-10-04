@@ -1,4 +1,5 @@
 using System;
+using MediatR;
 
 namespace OmniReserve.Application.Rooms.Queries.GetRoomById;
 
