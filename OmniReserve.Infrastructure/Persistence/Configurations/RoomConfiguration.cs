@@ -1,5 +1,6 @@
-using OmniReserve.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using OmniReserve.Domain.Entities;
 
 namespace OmniReserve.Infrastructure.Persistence.Configurations;
 
