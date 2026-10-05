@@ -1,23 +1,35 @@
-using System;
-using System.Threading;
-using System.Threading.Tasks;
 using MediatR;
+using OmniReserve.Application.Common.Interfaces;
 
 namespace OmniReserve.Application.Rooms.Queries.GetRoomById;
 
 public class GetRoomByIdQueryHandler : IRequestHandler<GetRoomByIdQuery, RoomResponseDto>
 {
-    public Task<RoomResponseDto> Handle(GetRoomByIdQuery request, CancellationToken cancellationToken)
-    {
-        var response = new RoomResponseDto
-        {
-            Id = request.RoomId,
-            RoomNumber = "101",
-            Type = "Single",
-            Price = 50.0m,
-            IsAvailable = true
-        };
+    private readonly IRoomRepository _roomRepository;
 
-        return Task.FromResult(response);
+    public GetRoomByIdQueryHandler(IRoomRepository roomRepository)
+    {
+        _roomRepository = roomRepository;
+    }
+
+    public async Task<RoomResponseDto> Handle(
+        GetRoomByIdQuery request,
+        CancellationToken cancellationToken)
+    {
+        var room = await _roomRepository.GetByIdAsync(request.RoomId);
+
+        if (room is null)
+        {
+            throw new Exception("Room not found");
+        }
+
+        return new RoomResponseDto
+        {
+            Id = room.Id,
+            RoomNumber = room.RoomNumber,
+            Type = room.Type.ToString(),
+            Price = room.PricePerNight,
+            IsAvailable = room.IsAvailable
+        };
     }
 }
