@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using OmniReserve.Application.Common.Interfaces;
 using OmniReserve.Domain.Entities;
 
 namespace OmniReserve.Infrastructure.Persistence.Repositories;
@@ -18,6 +19,6 @@ public class RoomRepository : IRoomRepository
     public Task<Room?> GetByIdAsync(Guid id)
     {
         _rooms.TryGetValue(id, out var room);
-        return room;
+        return Task.FromResult(room);
     }
 }

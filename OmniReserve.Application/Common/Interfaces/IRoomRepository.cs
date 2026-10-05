@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+using OmniReserve.Domain.Entities;
 
 namespace OmniReserve.Application.Common.Interfaces;
 

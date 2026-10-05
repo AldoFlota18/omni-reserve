@@ -1,3 +1,4 @@
+using Microsoft.Extensions.DependencyInjection;
 using OmniReserve.Application.Common.Interfaces;
 using OmniReserve.Infrastructure.Persistence.Repositories;
 
