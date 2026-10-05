@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using OmniReserve.Application.Common.Exceptions;
+using OmniReserve.Domain.Exceptions;
 
 namespace OmniReserve.Api.Middlewares;
 
@@ -46,6 +47,21 @@ public class GlobalExceptionHandlingMiddleware
             };
 
             problemDetails.Extensions.Add("errors", validationEx.Errors);
+
+            context.Response.StatusCode = StatusCodes.Status400BadRequest;
+
+            await context.Response.WriteAsJsonAsync(problemDetails);
+
+            return;
+        }
+        else if (exception is DomainException domainEx)
+        {
+            var problemDetails = new ProblemDetails
+            {
+                Status = StatusCodes.Status400BadRequest,
+                Title = "Error de Dominio",
+                Detail = domainEx.Message
+            };
 
             context.Response.StatusCode = StatusCodes.Status400BadRequest;
 
