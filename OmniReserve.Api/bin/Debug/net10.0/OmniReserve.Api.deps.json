@@ -175,6 +175,10 @@
         }
       },
       "OmniReserve.Infrastructure/1.0.0": {
+        "dependencies": {
+          "OmniReserve.Application": "1.0.0",
+          "OmniReserve.Domain": "1.0.0"
+        },
         "runtime": {
           "OmniReserve.Infrastructure.dll": {
             "assemblyVersion": "1.0.0.0",
