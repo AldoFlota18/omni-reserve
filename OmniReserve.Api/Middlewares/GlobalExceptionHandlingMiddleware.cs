@@ -57,7 +57,7 @@ public class GlobalExceptionHandlingMiddleware
         var genericProblemDetails = new ProblemDetails
         {
             Status = StatusCodes.Status500InternalServerError,
-            Title = "Ocurrió un error interno en el servidor"
+            Title = "Ocurrió un error interno en el servidor."
         };
 
         context.Response.StatusCode = StatusCodes.Status500InternalServerError;
