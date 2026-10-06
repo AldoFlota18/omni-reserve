@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using OmniReserve.Application.Common.Interfaces;
 using OmniReserve.Domain.Entities;
 using OmniReserve.Infrastructure.Persistence;
