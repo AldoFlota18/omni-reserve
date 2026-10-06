@@ -1,4 +1,3 @@
-using Microsoft.EntityFrameworkCore;
 using OmniReserve.Application.Common.Interfaces;
 using OmniReserve.Domain.Entities;
 using OmniReserve.Infrastructure.Persistence;
@@ -28,5 +27,12 @@ public class RoomRepository : IRoomRepository
     public async Task<Room?> SearchByNumberAsync(string roomNumber)
     {
         return await _context.Rooms.FirstOrDefaultAsync(r => r.RoomNumber == roomNumber);
+    }
+
+    public async Task<List<Room>> GetRoomsByTypeRawAsync(string roomType)
+    {
+        return await _context.Rooms
+            .FromSql($"SELECT * FROM \"Rooms\" WHERE \"Type\" = {roomType}")
+            .ToListAsync();
     }
 }
