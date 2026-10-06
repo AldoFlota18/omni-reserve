@@ -1,24 +1,27 @@
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using OmniReserve.Application.Common.Interfaces;
 using OmniReserve.Domain.Entities;
+using OmniReserve.Infrastructure.Persistence;
 
 namespace OmniReserve.Infrastructure.Persistence.Repositories;
 
 public class RoomRepository : IRoomRepository
 {
-    private static readonly Dictionary<Guid, Room> _rooms = new();
+    private readonly ApplicationDbContext _context;
 
-    public Task AddAsync(Room room)
+    public RoomRepository(ApplicationDbContext context)
     {
-        _rooms[room.Id] = room;
-        return Task.CompletedTask;
+        _context = context;
     }
 
-    public Task<Room?> GetByIdAsync(Guid id)
+    public async Task AddAsync(Room room)
     {
-        _rooms.TryGetValue(id, out var room);
-        return Task.FromResult(room);
+        await _context.Rooms.AddAsync(room);
+        await _context.SaveChangesAsync();
+    }
+
+    public async Task<Room?> GetByIdAsync(Guid id)
+    {
+        return await _context.Rooms.FirstOrDefaultAsync(r => r.Id == id);
     }
 }
