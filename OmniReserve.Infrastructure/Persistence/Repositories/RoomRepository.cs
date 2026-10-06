@@ -1,4 +1,3 @@
-using Microsoft.EntityFrameworkCore;
 using OmniReserve.Application.Common.Interfaces;
 using OmniReserve.Domain.Entities;
 using OmniReserve.Infrastructure.Persistence;
@@ -23,5 +22,10 @@ public class RoomRepository : IRoomRepository
     public async Task<Room?> GetByIdAsync(Guid id)
     {
         return await _context.Rooms.FirstOrDefaultAsync(r => r.Id == id);
+    }
+
+    public async Task<Room?> SearchByNumberAsync(string roomNumber)
+    {
+        return await _context.Rooms.FirstOrDefaultAsync(r => r.RoomNumber == roomNumber);
     }
 }
