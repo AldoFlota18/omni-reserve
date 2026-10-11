@@ -9,11 +9,11 @@ public class Room
     public RoomType Type { get; private set; }
     public decimal PricePerNight { get; private set; }
     public bool IsAvailable { get; private set; }
+    
+    public ICollection<Reservation> Reservations { get; private set; } = new List<Reservation>();
 
     public Room(string roomNumber, RoomType type, decimal pricePerNight)
     {
-        if (string.IsNullOrWhiteSpace(roomNumber)) throw new ArgumentNullException(nameof(roomNumber));
-
         Id = Guid.NewGuid();
         RoomNumber = roomNumber;
         Type = type;
@@ -21,13 +21,6 @@ public class Room
         IsAvailable = true;
     }
 
-    public void MarkAsUnavailable()
-    {
-        IsAvailable = false;
-    }
-
-    public void MarkAsAvailable()
-    {
-        IsAvailable = true;
-    }
+    public void MarkAsUnavailable() => IsAvailable = false;
+    public void MarkAsAvailable() => IsAvailable = true;
 }
