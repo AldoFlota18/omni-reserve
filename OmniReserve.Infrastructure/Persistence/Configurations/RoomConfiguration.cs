@@ -20,6 +20,6 @@ public class RoomConfiguration : IEntityTypeConfiguration<Room>
             .HasPrecision(18, 2);
 
         builder.Property(r => r.Type)
-            .HasConversion<string>()
+            .HasConversion<string>();
     }
 }
