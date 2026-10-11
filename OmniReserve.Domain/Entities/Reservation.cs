@@ -1,4 +1,5 @@
 using OmniReserve.Domain.Enums;
+using OmniReserve.Domain.Exceptions;
 
 namespace OmniReserve.Domain.Entities;
 
@@ -14,7 +15,7 @@ public class Reservation
 
     public Reservation(Guid userId, Guid roomId, DateTime checkInDate, DateTime checkOutDate, decimal totalPrice)
     {
-        if (checkInDate >= checkOutDate) throw new ArgumentException("CheckInDate must be earlier than CheckOutDate.");
+        if (checkInDate >= checkOutDate) throw new InvalidReservationDatesException();
 
         Id = Guid.NewGuid();
         UserId = userId;
