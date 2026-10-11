@@ -53,7 +53,7 @@ public class GlobalExceptionHandlingMiddleware
         {
             problemDetails.Status = StatusCodes.Status400BadRequest;
             problemDetails.Title = "Error de Dominio";
-            problemDetails.Detail = domainEx.Message
+            problemDetails.Detail = domainEx.Message;
         }
 
         context.Response.StatusCode = problemDetails.Status.Value;
