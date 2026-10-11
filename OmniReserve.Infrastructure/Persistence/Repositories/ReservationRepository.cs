@@ -17,7 +17,7 @@ public class ReservationRepository : IReservationRepository
     public async Task<Reservation?> GetReservationWithDetailsAsync(Guid id)
     {
         return await _context.Reservations
-            .Include(r => r.Use)
+            .Include(r => r.User)
             .Include(r => r.Room)
             .FirstOrDefaultAsync(r => r.Id == id);
     }

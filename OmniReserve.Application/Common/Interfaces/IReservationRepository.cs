@@ -1,24 +1,8 @@
-using Microsoft.EntityFrameworkCore;
-using OmniReserve.Application.Common.Interfaces;
 using OmniReserve.Domain.Entities;
-using OmniReserve.Infrastructure.Persistence;
 
-namespace OmniReserve.Infrastructure.Persistence.Repositories;
+namespace OmniReserve.Application.Common.Interfaces;
 
-public class ReservationRepository : IReservationRepository
+public interface IReservationRepository
 {
-    private readonly ApplicationDbContext _context;
-
-    public ReservationRepository(ApplicationDbContext context)
-    {
-        _context = context;
-    }
-
-    public async Task<Reservation?> GetReservationWithDetailsAsync(Guid id)
-    {
-        return await _context.Reservations
-            .Include(r => r.Use)
-            .Include(r => r.Room)
-            .FirstOrDefaultAsync(r => r.Id == id);
-    }
+    Task<Reservation?> GetReservationWithDetailsAsync(Guid id);
 }
