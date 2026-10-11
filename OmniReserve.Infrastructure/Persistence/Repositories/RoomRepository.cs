@@ -19,7 +19,7 @@ public class RoomRepository : IRoomRepository
         await _context.Rooms.AddAsync(room);
         await _context.SaveChangesAsync();
     }
-
+//a
     public async Task<Room?> GetByIdAsync(Guid id)
     {
         return await _context.Rooms.FirstOrDefaultAsync(r => r.Id == id);
