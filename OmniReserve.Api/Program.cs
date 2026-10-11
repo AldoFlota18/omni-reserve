@@ -1,3 +1,5 @@
+using OmniReserve.Application;
+
 var builder = WebApplication.CreateBuilder(args);
 
 

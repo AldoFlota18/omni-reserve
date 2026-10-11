@@ -51,7 +51,7 @@ public class GlobalExceptionHandlingMiddleware
 
         context.Response.StatusCode = problemDetails.Status.Value;
 
-        var json = JsonSerializer.Serialize(problemDetails)
+        var json = JsonSerializer.Serialize(problemDetails);
         await context.Response.WriteAsync(json);
     }
 }
