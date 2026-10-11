@@ -14,7 +14,7 @@ public class Room
     {
         if (string.IsNullOrWhiteSpace(roomNumber)) throw new ArgumentNullException(nameof(roomNumber));
 
-        Id = Guid.NewGuid()
+        Id = Guid.NewGuid();
         RoomNumber = roomNumber;
         Type = type;
         PricePerNight = pricePerNight;
