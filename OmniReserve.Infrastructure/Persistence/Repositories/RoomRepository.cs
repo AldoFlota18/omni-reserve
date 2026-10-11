@@ -27,6 +27,6 @@ public class RoomRepository : IRoomRepository
 
     public async Task<Room?> SearchByNumberAsync(string roomNumber)
     {
-        return await _context.Rooms.FirstOrDefaultAsync(r => r.RoomNumbe == roomNumber);
+        return await _context.Rooms.FirstOrDefaultAsync(r => r.RoomNumber == roomNumber);
     }
 }
