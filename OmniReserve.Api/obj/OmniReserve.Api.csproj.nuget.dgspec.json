@@ -1231,6 +1231,9 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
+              "C:\\Users\\aldol\\Documents\\AplicacionesBasesDatos\\omni-reserve\\OmniReserve.Application\\OmniReserve.Application.csproj": {
+                "projectPath": "C:\\Users\\aldol\\Documents\\AplicacionesBasesDatos\\omni-reserve\\OmniReserve.Application\\OmniReserve.Application.csproj"
+              },
               "C:\\Users\\aldol\\Documents\\AplicacionesBasesDatos\\omni-reserve\\OmniReserve.Domain\\OmniReserve.Domain.csproj": {
                 "projectPath": "C:\\Users\\aldol\\Documents\\AplicacionesBasesDatos\\omni-reserve\\OmniReserve.Domain\\OmniReserve.Domain.csproj"
               }
