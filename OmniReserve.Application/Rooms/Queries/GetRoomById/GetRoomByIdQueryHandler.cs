@@ -1,6 +1,6 @@
 using MediatR;
 using OmniReserve.Application.Common.Interfaces;
-using OmniReserve.Application.Rooms.Common;
+using OmniReserve.Application.Rooms;
 
 namespace OmniReserve.Application.Rooms.Queries.GetRoomById;
 
@@ -24,10 +24,10 @@ public class GetRoomByIdQueryHandler : IRequestHandler<GetRoomByIdQuery, RoomRes
 
         return new RoomResponseDto(
             room.Id,
-            room.Number,
+            room.RoomNumber,
             room.Type.ToString(),
             room.PricePerNight,
-            room.Description
-        )
+            true
+        );
     }
 }
