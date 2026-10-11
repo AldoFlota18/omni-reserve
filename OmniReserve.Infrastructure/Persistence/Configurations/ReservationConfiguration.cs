@@ -23,5 +23,21 @@ public class ReservationConfiguration : IEntityTypeConfiguration<Reservation>
 
         builder.Property(r => r.CheckOutDate)
             .IsRequired();
+
+        builder.Property(r => r.TotalPrice)
+            .IsRequired();
+
+        builder.Property(r => r.Status)
+            .IsRequired();
+
+        builder.HasOne(r => r.Room)
+            .WithMany(room => room.Reservations)
+            .HasForeignKey(r => r.RoomId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        builder.HasOne(r => r.User)
+            .WithMany(user => user.Reservations)
+            .HasForeignKey(r => r.UserInvalid)
+            .OnDelete(DeleteBehavior.Restrict);
     }
 }
