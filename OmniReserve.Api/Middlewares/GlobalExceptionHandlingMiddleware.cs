@@ -2,6 +2,7 @@ using System.Text.Json;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using OmniReserve.Domain.Exceptions;
 using ValidationException = OmniReserve.Application.Common.Exceptions.ValidationException;
 
 namespace OmniReserve.Api.Middlewares;
@@ -47,6 +48,12 @@ public class GlobalExceptionHandlingMiddleware
             problemDetails.Title = "Error de Validación";
             problemDetails.Detail = "Se han producido uno o más errores de validación.";
             problemDetails.Extensions.Add("errors", validationEx.Errors);
+        }
+        else if (exception is DomainException domainEx)
+        {
+            problemDetails.Status = StatusCodes.Status400BadRequest;
+            problemDetails.Title = "Error de Dominio";
+            problemDetails.Detail = domainEx.Message;
         }
 
         context.Response.StatusCode = problemDetails.Status.Value;
