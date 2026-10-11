@@ -1,3 +1,6 @@
+using OmniReserve.Application;
+using OmniReserve.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
