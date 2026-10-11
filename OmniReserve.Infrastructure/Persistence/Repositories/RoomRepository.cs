@@ -10,7 +10,7 @@ internal class RoomRepository : IRoomRepository
     public Task AddAsync(Room room)
     {
         _rooms[room.Id] = room;
-        return Task.CompletedTask
+        return Task.CompletedTask;
     }
 
     public Task<Room?> GetByIdAsync(Guid id)
