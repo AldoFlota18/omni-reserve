@@ -19,7 +19,7 @@ public class RoomRepository : IRoomRepository
         await _context.Rooms.AddAsync(room);
         await _context.SaveChangesAsync();
     }
-
+//a
     public async Task<Room?> GetByIdAsync(Guid id)
     {
         return await _context.Rooms.FirstOrDefaultAsync(r => r.Id == id);
@@ -28,5 +28,12 @@ public class RoomRepository : IRoomRepository
     public async Task<Room?> SearchByNumberAsync(string roomNumber)
     {
         return await _context.Rooms.FirstOrDefaultAsync(r => r.RoomNumber == roomNumber);
+    }
+
+    public async Task<List<Room>> GetRoomsByTypeRawAsync(string roomType)
+    {
+        return await _context.Rooms
+            .FromSql($"SELECT * FROM \"Rooms\" WHERE \"Type\" = {roomType}")
+            .ToListAsync();
     }
 }
