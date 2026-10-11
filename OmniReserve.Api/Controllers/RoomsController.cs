@@ -28,6 +28,6 @@ public class RoomsController : ControllerBase
     {
         var query = new GetRoomByIdQuery(id);
         var result = await _sender.Send(query);
-        return Ok(result)
+        return Ok(result);
     }
 }
