@@ -20,4 +20,4 @@ public class User
         PasswordHash = string.IsNullOrWhiteSpace(passwordHash) ? throw new ArgumentNullException(nameof(passwordHash)) : passwordHash;
         Role = role;
     }
-}
+} //a
