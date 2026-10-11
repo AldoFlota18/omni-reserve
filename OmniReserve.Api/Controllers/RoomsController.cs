@@ -19,6 +19,6 @@ public class RoomsController : ControllerBase
     public async Task<IActionResult> CreateRoom([FromBody] CreateRoomCommand command)
     {
         var result = await _sender.Send(command);
-        return Ok(result)
+        return Ok(result);
     }
 }
