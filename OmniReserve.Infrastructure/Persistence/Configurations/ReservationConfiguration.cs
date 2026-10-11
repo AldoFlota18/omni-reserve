@@ -40,4 +40,4 @@ public class ReservationConfiguration : IEntityTypeConfiguration<Reservation>
             .HasForeignKey(r => r.UserId)
             .OnDelete(DeleteBehavior.Restrict);
     }
-}
+} //a
