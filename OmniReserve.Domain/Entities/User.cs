@@ -1,3 +1,5 @@
+using OmniReserve.Domain.ValueObjects;
+
 namespace OmniReserve.Domain.Entities;
 
 public class User
@@ -5,7 +7,7 @@ public class User
     public Guid Id { get; private set; }
     public string FirstName { get; private set; }
     public string LastName { get; private set; }
-    public string Email { get; private set; }
+    public EmailAddress Email { get; private set; }
     public string PasswordHash { get; private set; }
     public Enums.Role Role { get; private set; }
     
@@ -16,8 +18,8 @@ public class User
         Id = id == Guid.Empty ? Guid.NewGuid() : id;
         FirstName = string.IsNullOrWhiteSpace(firstName) ? throw new ArgumentNullException(nameof(firstName)) : firstName;
         LastName = string.IsNullOrWhiteSpace(lastName) ? throw new ArgumentNullException(nameof(lastName)) : lastName;
-        Email = string.IsNullOrWhiteSpace(email) ? throw new ArgumentNullException(nameof(email)) : email;
+        Email = new EmailAddress(email);
         PasswordHash = string.IsNullOrWhiteSpace(passwordHash) ? throw new ArgumentNullException(nameof(passwordHash)) : passwordHash;
         Role = role;
     }
-} //a
+}
