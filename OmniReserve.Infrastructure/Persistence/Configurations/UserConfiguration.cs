@@ -38,4 +38,4 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
         builder.Property(u => u.Role)
             .IsRequired();
     }
-}
+} //a
