@@ -39,7 +39,7 @@ public class CreateReservationCommandHandler : IRequestHandler<CreateReservation
 
         var reservation = new Reservation(request.UserId, request.RoomId, request.StartDate, request.EndDate, totalPrice);
 
-        await _reservationRepository.AddAsyncInvalid(reservation);
+        await _reservationRepository.AddAsync(reservation);
 
         return reservation.Id;
     }
