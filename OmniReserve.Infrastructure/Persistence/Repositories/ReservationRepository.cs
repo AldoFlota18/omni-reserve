@@ -25,6 +25,6 @@ public class ReservationRepository : IReservationRepository
     public async Task<bool> IsRoomAvailableAsync(Guid roomId, DateTime start, DateTime end)
     {
         return !await _context.Reservations
-            .AnyAsync(r => r.RoomId == roomId && r.StartDate < end && r.EndDate > start);
+            .AnyAsync(r => r.RoomId == roomId && r.CheckInDate < end && r.CheckOutDate > start);
     }
 }
