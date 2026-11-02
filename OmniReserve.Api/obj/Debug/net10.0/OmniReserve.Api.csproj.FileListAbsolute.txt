@@ -138,3 +138,4 @@ C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin
 C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\BCrypt-Net-Next.dll
