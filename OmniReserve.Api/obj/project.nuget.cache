@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "AiH1YJQf8/A=",
+  "dgSpecHash": "LNTVnBwkNeg=",
   "success": true,
   "projectFilePath": "C:\\Users\\aldol\\Documents\\AplicacionesBasesDatos\\omni-reserve\\OmniReserve.Api\\OmniReserve.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\aldol\\.nuget\\packages\\bcrypt.net-next\\4.2.0\\bcrypt.net-next.4.2.0.nupkg.sha512",
     "C:\\Users\\aldol\\.nuget\\packages\\fluentvalidation\\12.2.0\\fluentvalidation.12.2.0.nupkg.sha512",
     "C:\\Users\\aldol\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.2.0\\fluentvalidation.dependencyinjectionextensions.12.2.0.nupkg.sha512",
     "C:\\Users\\aldol\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

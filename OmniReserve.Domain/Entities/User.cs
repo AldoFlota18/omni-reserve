@@ -13,12 +13,12 @@ public class User
     
     public ICollection<Reservation> Reservations { get; private set; } = new List<Reservation>();
 
-    public User(Guid id, string firstName, string lastName, string email, string passwordHash, Enums.Role role)
+    public User(Guid id, string firstName, string lastName, EmailAddress email, string passwordHash, Enums.Role role)
     {
         Id = id == Guid.Empty ? Guid.NewGuid() : id;
         FirstName = string.IsNullOrWhiteSpace(firstName) ? throw new ArgumentNullException(nameof(firstName)) : firstName;
         LastName = string.IsNullOrWhiteSpace(lastName) ? throw new ArgumentNullException(nameof(lastName)) : lastName;
-        Email = new EmailAddress(email);
+        Email = email;
         PasswordHash = string.IsNullOrWhiteSpace(passwordHash) ? throw new ArgumentNullException(nameof(passwordHash)) : passwordHash;
         Role = role;
     }
