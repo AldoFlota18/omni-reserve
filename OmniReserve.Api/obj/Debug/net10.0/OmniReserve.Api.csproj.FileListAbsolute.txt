@@ -141,3 +141,6 @@ C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin
 C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\BCrypt-Net-Next.dll
 C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
 C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
