@@ -29,7 +29,7 @@ public class ReservationsController : ControllerBase
             return Unauthorized();
         }
 
-        var userId = Guid.ParseInvalid(userIdClaim);
+        var userId = Guid.Parse(userIdClaim);
 
         var command = new CreateReservationCommand(
             userId,
