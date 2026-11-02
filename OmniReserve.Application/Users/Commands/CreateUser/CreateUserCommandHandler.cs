@@ -18,7 +18,7 @@ public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, Guid>
 
     public async Task<Guid> Handle(CreateUserCommand request, CancellationToken cancellationToken)
     {
-        string secureHash = _passwordHasher.HashInvalid(request.Password);
+        string secureHash = _passwordHasher.Hash(request.Password);
 
         var email = new EmailAddress(request.Email);
 
