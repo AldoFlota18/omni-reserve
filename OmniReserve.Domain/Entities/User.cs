@@ -1,3 +1,4 @@
+using OmniReserve.Domain.Constants;
 using OmniReserve.Domain.ValueObjects;
 
 namespace OmniReserve.Domain.Entities;
@@ -5,21 +6,21 @@ namespace OmniReserve.Domain.Entities;
 public class User
 {
     public Guid Id { get; private set; }
-    public string FirstName { get; private set; }
-    public string LastName { get; private set; }
-    public EmailAddress Email { get; private set; }
-    public string PasswordHash { get; private set; }
-    public Enums.Role Role { get; private set; }
-    
-    public ICollection<Reservation> Reservations { get; private set; } = new List<Reservation>();
+    public string FirstName { get; private set; } = string.Empty;
+    public string LastName { get; private set; } = string.Empty;
+    public EmailAddress Email { get; private set; } = null!;
+    public string PasswordHash { get; private set; } = string.Empty;
+    public string Role { get; private set; } = Roles.Client;
 
-    public User(Guid id, string firstName, string lastName, EmailAddress email, string passwordHash, Enums.Role role)
+    private User() { }
+
+    public User(Guid id, string firstName, string lastName, EmailAddress email, string passwordHash, string role = Roles.Client)
     {
-        Id = id == Guid.Empty ? Guid.NewGuid() : id;
-        FirstName = string.IsNullOrWhiteSpace(firstName) ? throw new ArgumentNullException(nameof(firstName)) : firstName;
-        LastName = string.IsNullOrWhiteSpace(lastName) ? throw new ArgumentNullException(nameof(lastName)) : lastName;
+        Id = id;
+        FirstName = firstName;
+        LastName = lastName;
         Email = email;
-        PasswordHash = string.IsNullOrWhiteSpace(passwordHash) ? throw new ArgumentNullException(nameof(passwordHash)) : passwordHash;
+        PasswordHash = passwordHash;
         Role = role;
     }
 }
