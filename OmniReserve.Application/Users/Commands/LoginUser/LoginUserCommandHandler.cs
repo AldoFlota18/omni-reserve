@@ -39,4 +39,4 @@ public class LoginUserCommandHandler : IRequestHandler<LoginUserCommand, string>
 
         return token;
     }
-}
+} //a
