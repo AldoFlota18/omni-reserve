@@ -11,6 +11,8 @@ public class User
     public EmailAddress Email { get; private set; } = null!;
     public string PasswordHash { get; private set; } = string.Empty;
     public string Role { get; private set; } = Roles.Client;
+    
+    public ICollection<Reservation> Reservations { get; private set; } = new List<Reservation>();
 
     private User() { }
 

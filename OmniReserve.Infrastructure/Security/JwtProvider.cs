@@ -26,7 +26,7 @@ public class JwtProvider : IJwtProvider
         {
             new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
             new Claim(JwtRegisteredClaimNames.Email, user.Email.Value),
-            new Claim(ClaimTypes.Role, user.Rol)
+            new Claim(ClaimTypes.Role, user.Role)
         };
 
         var tokenDescriptor = new SecurityTokenDescriptor
@@ -35,7 +35,7 @@ public class JwtProvider : IJwtProvider
             Expires = DateTime.UtcNow.AddMinutes(_jwtSettings.ExpiryMinutes),
             Issuer = _jwtSettings.Issuer,
             Audience = _jwtSettings.Audience,
-            SigningCredentials = new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
         };
 
         var token = tokenHandler.CreateToken(tokenDescriptor);
