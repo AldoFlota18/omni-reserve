@@ -4,7 +4,10 @@ namespace OmniReserve.Application.Common.Interfaces;
 
 public interface IReservationRepository
 {
-    Task<Reservation?> GetReservationWithDetailsAsync(Guid id);
-    Task<bool> IsRoomAvailableAsync(Guid roomId, DateTime start, DateTime end);
     Task AddAsync(Reservation reservation);
+    Task<bool> ExistsOverlappingAsync(Guid roomId, DateTime checkInDate, DateTime checkOutDate);
+    Task<bool> IsRoomAvailableAsync(Guid roomId, DateTime checkInDate, DateTime checkOutDate);
+    Task<List<Reservation>> GetAllAsync();
+    Task<Reservation?> GetByIdAsync(Guid id);
+    Task<Reservation?> GetReservationWithDetailsAsync(Guid id);
 }

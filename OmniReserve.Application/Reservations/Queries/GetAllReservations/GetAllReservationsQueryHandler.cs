@@ -15,7 +15,7 @@ public class GetAllReservationsQueryHandler : IRequestHandler<GetAllReservations
 
     public async Task<List<ReservationDto>> Handle(GetAllReservationsQuery request, CancellationToken cancellationToken)
     {
-        var reservations = await _reservationRepository.GetAllAsyncInvalid(); // Error intencional
+        var reservations = await _reservationRepository.GetAllAsync();
 
         return reservations.Select(r => new ReservationDto(
             r.Id,
