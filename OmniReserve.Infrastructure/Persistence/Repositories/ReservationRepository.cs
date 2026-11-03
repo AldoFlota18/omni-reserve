@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using OmniReserve.Application.Common.Interfaces;
 using OmniReserve.Domain.Entities;
-using OmniReserve.Infrastructure.Persistence;
 
 namespace OmniReserve.Infrastructure.Persistence.Repositories;
 
@@ -14,23 +13,40 @@ public class ReservationRepository : IReservationRepository
         _context = context;
     }
 
-    public async Task<Reservation?> GetReservationWithDetailsAsync(Guid id)
-    {
-        return await _context.Reservations
-            .Include(r => r.User)
-            .Include(r => r.Room)
-            .FirstOrDefaultAsync(r => r.Id == id);
-    }
-
-    public async Task<bool> IsRoomAvailableAsync(Guid roomId, DateTime start, DateTime end)
-    {
-        return !await _context.Reservations
-            .AnyAsync(r => r.RoomId == roomId && r.CheckInDate < end && r.CheckOutDate > start);
-    }
-
     public async Task AddAsync(Reservation reservation)
     {
         await _context.Reservations.AddAsync(reservation);
         await _context.SaveChangesAsync();
+    }
+
+    public async Task<bool> ExistsOverlappingAsync(Guid roomId, DateTime checkInDate, DateTime checkOutDate)
+    {
+        return await _context.Reservations
+            .AnyAsync(r => r.RoomId == roomId &&
+                           r.CheckInDate < checkOutDate &&
+                           r.CheckOutDate > checkInDate);
+    }
+
+    public async Task<bool> IsRoomAvailableAsync(Guid roomId, DateTime checkInDate, DateTime checkOutDate)
+    {
+        return !await ExistsOverlappingAsync(roomId, checkInDate, checkOutDate);
+    }
+
+    public async Task<List<Reservation>> GetAllAsync()
+    {
+        return await _context.Reservations.ToListAsync();
+    }
+
+    public async Task<Reservation?> GetByIdAsync(Guid id)
+    {
+        return await _context.Reservations.FindAsync(id);
+    }
+
+    public async Task<Reservation?> GetReservationWithDetailsAsync(Guid id)
+    {
+        return await _context.Reservations
+            .Include(r => r.Room)
+            .Include(r => r.User)
+            .FirstOrDefaultAsync(r => r.Id == id);
     }
 }
