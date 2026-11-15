@@ -144,3 +144,12 @@ C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin
 C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.Extensions.Options.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.Extensions.Primitives.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\StackExchange.Redis.dll
+C:\Users\aldol\Documents\AplicacionesBasesDatos\omni-reserve\OmniReserve.Api\bin\Debug\net10.0\System.Diagnostics.DiagnosticSource.dll
