@@ -30,7 +30,7 @@ public class RoomsController : ControllerBase
     [HttpGet("{id}")]
     public async Task<IActionResult> GetRoom(Guid id)
     {
-        var query = new GetRoomByIdQuery { RoomId = id };
+        var query = new GetRoomByIdQuery(id);
         var result = await _sender.Send(query);
         return Ok(result);
     }

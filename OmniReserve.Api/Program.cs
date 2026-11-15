@@ -26,7 +26,7 @@ builder.Services.AddRateLimiter(options =>
 
     options.AddFixedWindowLimiter("GlobalLimit", limiterOptions =>
     {
-        limiterOptions.PermitLimitInvalid = 100; // Error intencional
+        limiterOptions.PermitLimit = 100;
         limiterOptions.Window = TimeSpan.FromMinutes(1);
         limiterOptions.QueueLimit = 0;
     });
