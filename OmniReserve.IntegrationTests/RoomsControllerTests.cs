@@ -31,7 +31,7 @@ public class RoomsControllerTests : IClassFixture<WebApplicationFactory<Program>
 
         var response = await client.GetAsync($"/api/rooms/{Guid.NewGuid()}");
 
-        Assert.Equal(HttpStatusCode.OK, response.StatusCode); 
+        Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
     }
 
     [Fact]
