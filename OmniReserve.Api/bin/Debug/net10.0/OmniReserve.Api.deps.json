@@ -776,6 +776,7 @@
         "dependencies": {
           "FluentValidation.DependencyInjectionExtensions": "12.2.0",
           "MediatR": "14.2.0",
+          "Microsoft.Extensions.Caching.Abstractions": "11.0.0",
           "OmniReserve.Domain": "1.0.0"
         },
         "runtime": {

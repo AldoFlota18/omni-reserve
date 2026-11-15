@@ -117,24 +117,24 @@
           }
         }
       },
-      "Microsoft.Extensions.Caching.Abstractions/10.0.12": {
+      "Microsoft.Extensions.Caching.Abstractions/11.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "10.0.14"
+          "Microsoft.Extensions.Primitives": "11.0.0"
         },
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Caching.Abstractions.dll": {
-            "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.1226.42308"
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.26.53018"
           }
         }
       },
       "Microsoft.Extensions.Caching.Memory/10.0.12": {
         "dependencies": {
-          "Microsoft.Extensions.Caching.Abstractions": "10.0.12",
+          "Microsoft.Extensions.Caching.Abstractions": "11.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.14",
           "Microsoft.Extensions.Logging.Abstractions": "10.0.12",
           "Microsoft.Extensions.Options": "10.0.14",
-          "Microsoft.Extensions.Primitives": "10.0.14"
+          "Microsoft.Extensions.Primitives": "11.0.0"
         },
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Caching.Memory.dll": {
@@ -146,7 +146,7 @@
       "Microsoft.Extensions.Configuration/10.0.14": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "10.0.14",
-          "Microsoft.Extensions.Primitives": "10.0.14"
+          "Microsoft.Extensions.Primitives": "11.0.0"
         },
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Configuration.dll": {
@@ -157,7 +157,7 @@
       },
       "Microsoft.Extensions.Configuration.Abstractions/10.0.14": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "10.0.14"
+          "Microsoft.Extensions.Primitives": "11.0.0"
         },
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
@@ -224,7 +224,7 @@
       "Microsoft.Extensions.Options/10.0.14": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.14",
-          "Microsoft.Extensions.Primitives": "10.0.14"
+          "Microsoft.Extensions.Primitives": "11.0.0"
         },
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Options.dll": {
@@ -239,7 +239,7 @@
           "Microsoft.Extensions.Configuration.Binder": "10.0.14",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.14",
           "Microsoft.Extensions.Options": "10.0.14",
-          "Microsoft.Extensions.Primitives": "10.0.14"
+          "Microsoft.Extensions.Primitives": "11.0.0"
         },
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
@@ -248,11 +248,11 @@
           }
         }
       },
-      "Microsoft.Extensions.Primitives/10.0.14": {
+      "Microsoft.Extensions.Primitives/11.0.0": {
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Primitives.dll": {
-            "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.1426.52326"
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.26.53018"
           }
         }
       },
@@ -339,6 +339,7 @@
         "dependencies": {
           "FluentValidation.DependencyInjectionExtensions": "12.2.0",
           "MediatR": "14.2.0",
+          "Microsoft.Extensions.Caching.Abstractions": "11.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.14",
           "OmniReserve.Domain": "1.0.0"
         },
@@ -428,12 +429,12 @@
       "path": "microsoft.entityframeworkcore.relational/10.0.12",
       "hashPath": "microsoft.entityframeworkcore.relational.10.0.12.nupkg.sha512"
     },
-    "Microsoft.Extensions.Caching.Abstractions/10.0.12": {
+    "Microsoft.Extensions.Caching.Abstractions/11.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-sI3A6MUAyZwccLnwq0cXuRmC3WBtXieimBWafXSfhRJ4jnM2uGVXrqImDDVyW27u4vVaTOGlJxNJd8d1FGvCNQ==",
-      "path": "microsoft.extensions.caching.abstractions/10.0.12",
-      "hashPath": "microsoft.extensions.caching.abstractions.10.0.12.nupkg.sha512"
+      "sha512": "sha512-L+eahU5QGaFaCau3Y9qqY7WThUsR18sHASVDD1KuaSx2dy73NOY9U5Qz5eOe6bJOF3wHzkEaCl2LZhgwtlClyw==",
+      "path": "microsoft.extensions.caching.abstractions/11.0.0",
+      "hashPath": "microsoft.extensions.caching.abstractions.11.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Memory/10.0.12": {
       "type": "package",
@@ -505,12 +506,12 @@
       "path": "microsoft.extensions.options.configurationextensions/10.0.14",
       "hashPath": "microsoft.extensions.options.configurationextensions.10.0.14.nupkg.sha512"
     },
-    "Microsoft.Extensions.Primitives/10.0.14": {
+    "Microsoft.Extensions.Primitives/11.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1bbZqqCJTPba3inTADExbp/9PsGVyvGOX3zr6tFr7ySCgVkX9Lpw7BV0TizktNItd3SsbUu1sQfSAYm1GZMoNw==",
-      "path": "microsoft.extensions.primitives/10.0.14",
-      "hashPath": "microsoft.extensions.primitives.10.0.14.nupkg.sha512"
+      "sha512": "sha512-HH2akbW2HeY/xeZJA5UceuQQX+1Pv/Kxrz/x4XPoH6wYDtgPIlBeOTZlQXlT+b50b1Ym/xfP+WJCX9FW4uLBXQ==",
+      "path": "microsoft.extensions.primitives/11.0.0",
+      "hashPath": "microsoft.extensions.primitives.11.0.0.nupkg.sha512"
     },
     "Microsoft.IdentityModel.Abstractions/8.23.0": {
       "type": "package",
