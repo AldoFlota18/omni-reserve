@@ -31,7 +31,7 @@ builder.Services.AddRateLimiter(options =>
         limiterOptions.QueueLimit = 0;
     });
 
-    options.AddFixedWindowLimiterInvalid("AuthLimit", limiterOptions => 
+    options.AddFixedWindowLimiter("AuthLimit", limiterOptions =>
     {
         limiterOptions.PermitLimit = 3;
         limiterOptions.Window = TimeSpan.FromSeconds(30);
