@@ -32,6 +32,12 @@ public class RoomsController : ControllerBase
     {
         var query = new GetRoomByIdQuery(id);
         var result = await _sender.Send(query);
+        
+        if (result is null)
+        {
+            return NotFound();
+        }
+
         return Ok(result);
     }
 
