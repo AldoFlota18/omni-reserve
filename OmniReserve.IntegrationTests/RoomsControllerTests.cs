@@ -18,7 +18,7 @@ public class RoomsControllerTests : IClassFixture<WebApplicationFactory<Program>
     {
         var client = _factory.CreateClient();
 
-        var response = await client.GetAsync("/api/rooms-invalid"); // Error intencional
+        var response = await client.GetAsync("/api/rooms");
 
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
     }
