@@ -20,11 +20,18 @@ public class GetAllRoomsQueryHandler : IRequestHandler<GetAllRoomsQuery, List<Ro
 
     public async Task<List<RoomDto>> Handle(GetAllRoomsQuery request, CancellationToken cancellationToken)
     {
-        var cachedRooms = await _cache.GetStringAsync(CACHE_KEY, cancellationToken);
-
-        if (!string.IsNullOrEmpty(cachedRooms))
+        try
         {
-            return JsonSerializer.Deserialize<List<RoomDto>>(cachedRooms)!;
+            var cachedRooms = await _cache.GetStringAsync(CACHE_KEY, cancellationToken);
+
+            if (!string.IsNullOrEmpty(cachedRooms))
+            {
+                return JsonSerializer.Deserialize<List<RoomDto>>(cachedRooms)!;
+            }
+        }
+        catch
+        {
+            // ignorar
         }
 
         var rooms = await _roomRepository.GetAllAsync();
@@ -37,14 +44,21 @@ public class GetAllRoomsQueryHandler : IRequestHandler<GetAllRoomsQuery, List<Ro
             r.IsAvailable
         )).ToList();
 
-        var serializedRooms = JsonSerializer.Serialize(roomDtos);
-
-        var options = new DistributedCacheEntryOptions
+        try
         {
-            AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5)
-        };
+            var serializedRooms = JsonSerializer.Serialize(roomDtos);
 
-        await _cache.SetStringAsync(CACHE_KEY, serializedRooms, options, cancellationToken);
+            var options = new DistributedCacheEntryOptions
+            {
+                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5)
+            };
+
+            await _cache.SetStringAsync(CACHE_KEY, serializedRooms, options, cancellationToken);
+        }
+        catch
+        {
+            // Ignorar
+        }
 
         return roomDtos;
     }

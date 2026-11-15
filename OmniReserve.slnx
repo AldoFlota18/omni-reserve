@@ -3,4 +3,5 @@
   <Project Path="OmniReserve.Application/OmniReserve.Application.csproj" />
   <Project Path="OmniReserve.Domain/OmniReserve.Domain.csproj" />
   <Project Path="OmniReserve.Infrastructure/OmniReserve.Infrastructure.csproj" />
+  <Project Path="OmniReserve.IntegrationTests/OmniReserve.IntegrationTests.csproj" />
 </Solution>
