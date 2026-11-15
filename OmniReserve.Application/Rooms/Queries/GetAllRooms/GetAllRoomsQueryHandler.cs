@@ -20,7 +20,7 @@ public class GetAllRoomsQueryHandler : IRequestHandler<GetAllRoomsQuery, List<Ro
 
     public async Task<List<RoomDto>> Handle(GetAllRoomsQuery request, CancellationToken cancellationToken)
     {
-        var cachedRooms = await _cache.GetStringAsyncInvalid(CACHE_KEY, cancellationToken);
+        var cachedRooms = await _cache.GetStringAsync(CACHE_KEY, cancellationToken);
 
         if (!string.IsNullOrEmpty(cachedRooms))
         {
